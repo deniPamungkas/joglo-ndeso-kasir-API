@@ -85,11 +85,11 @@ export const updateMenu = async (req, res) => {
   }
 };
 
-// export const deleteAll = async (req, res) => {
-//   try {
-//     const result = await menuSchema.deleteMany({});
-//     return res.status(200).json("berhasil hapus");
-//   } catch (error) {
-//     return res.status(400).json("gagal");
-//   }
-// };
+export const deleteAll = async (req, res) => {
+  try {
+    const result = await orderSchema.deleteMany({});
+    return res.status(200).json("berhasil hapus");
+  } catch (error) {
+    return res.status(400).json("gagal");
+  }
+};

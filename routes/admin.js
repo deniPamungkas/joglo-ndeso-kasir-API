@@ -1,6 +1,7 @@
 import { Router } from "express";
 import {
   addNewMenu,
+  deleteAll,
   deleteProduct,
   editMenu,
   getAllProducts,
@@ -15,6 +16,6 @@ route.post("/", authenticateToken, validateProduct, addNewMenu);
 route.delete("/", authenticateToken, deleteProduct);
 route.post("/editProduct", editMenu);
 route.patch("/:id", authenticateToken, updateMenu);
-// route.delete("/deleteAll", deleteAll);
+route.delete("/deleteAll", deleteAll);
 
 export default route;

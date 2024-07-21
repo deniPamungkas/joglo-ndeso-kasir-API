@@ -289,19 +289,19 @@ export const getAllOrders = async (req, res) => {
   }
 };
 
-export const deleteAll = async (req, res) => {
-  // try {
-  //   const result = await orderSchema.find({ name: "Kopi" });
-  //   return res.status(200).json(result);
-  // } catch (error) {
-  //   return res.status(400).json(result);
-  // }
-  // try {
-  //   const result = await orderSchema.deleteMany({
-  //     name: "Teh",
-  //   });
-  //   return res.status(200).json("berhasil hapus");
-  // } catch (error) {
-  //   return res.status(400).json("gagal");
-  // }
-};
+// export const deleteAll = async (req, res) => {
+//   try {
+//     const result = await orderSchema.find({ name: "Kopi" });
+//     return res.status(200).json(result);
+//   } catch (error) {
+//     return res.status(400).json(result);
+//   }
+//   try {
+//     const result = await orderSchema.deleteMany({
+//       name: "Teh",
+//     });
+//     return res.status(200).json("berhasil hapus");
+//   } catch (error) {
+//     return res.status(400).json("gagal");
+//   }
+// };

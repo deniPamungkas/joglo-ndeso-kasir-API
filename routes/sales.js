@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { authenticateToken } from "../middlewares/jwt.js";
 import {
-  deleteAll,
   getAllOrders,
   getOrdersByDate,
   getSixMonthOrders,
@@ -20,7 +19,7 @@ route.get("/this-month", authenticateToken, getThisMonthOrders);
 route.get("/this-week", authenticateToken, getThisWeekOrders);
 route.get("/this-day", authenticateToken, getThisDayOrders);
 route.get("/", authenticateToken, getAllOrders);
-route.get("/deleteAll", deleteAll);
+// route.get("/deleteAll", deleteAll);
 route.post("/get-orders-by-date", authenticateToken, getOrdersByDate);
 
 export default route;
